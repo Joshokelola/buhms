@@ -1,10 +1,7 @@
 # Makefile for deploying the Flutter web projects to GitHub
 
-BASE_HREF = /$(OUTPUT)/
-
-# Replace this with your GitHub username
-GITHUB_USER = joshokelola
-GITHUB_REPO = https://github.com/$(GITHUB_USER)/$(OUTPUT)
+BASE_HREF = /$(buhms-website)/
+GITHUB_REPO = https://x-access-token:${DEPLOY_TOKEN}@github.com/$(GITHUB_USER)/$(OUTPUT)
 BUILD_VERSION := $(shell grep 'version:' pubspec.yaml | awk '{print $$2}')
 
 # Deploy the Flutter web project to GitHub
