@@ -1,0 +1,21 @@
+{
+  "flutter": "Flutter",
+  "@flutter": {
+    "description": "Displays text Flutter",
+    "type": "text",
+    "placeholders": {}
+  },
+  "hostelManagementSystem" : "Bells University Hostel Management System",
+  "sampleText" : "Sample Text",
+  "matricNumber": "Matric Number",
+  "enterMatricNumber": "Enter Matric Number",
+  "password": "Password",
+  "enterPassword": "Enter Password",
+  "enterEmail": "Enter Email",
+  "login": "Login",
+  "@sampleText": {
+    "description" : "Displays text Sample Text",
+    "type": "text",
+    "placeholders": {}
+  }
+}
