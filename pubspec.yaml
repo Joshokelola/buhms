@@ -51,7 +51,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  # Linter
+  very_good_analysis: ^6.0.0
 
   # Code Generation
   build_runner: ^2.4.13
