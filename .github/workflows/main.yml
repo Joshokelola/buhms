@@ -1,0 +1,37 @@
+name: Deploy Flutter Web
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+env:
+  GITHUB_USER: ${{ github.repository_owner }}
+  OUTPUT: buhms-website
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.19.0'
+          channel: 'stable'
+      
+      - name: Configure Git
+        run: |
+          git config --global user.name github-actions
+          git config --global user.email github-actions@github.com
+          
+      - name: Install dependencies
+        run: flutter pub get
+        
+      - name: Deploy using Makefile
+        env:
+          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+        run: |
+          make deploy OUTPUT=${{ env.OUTPUT }}
