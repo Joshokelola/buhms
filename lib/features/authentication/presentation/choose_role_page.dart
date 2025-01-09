@@ -119,7 +119,7 @@ class _ChooseRolePageState extends ConsumerState<ChooseRolePage> {
                             },
                           ),
                           _buildPortalButton(
-                            title: 'STAFF PORTAL',
+                            title: 'ADMIN PORTAL',
                             color: secondaryGreen,
                             icon: Icons.work,
                             maxWidth: constraints.maxWidth,
