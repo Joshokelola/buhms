@@ -34,4 +34,4 @@ jobs:
         env:
           DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
         run: |
-          make deploy OUTPUT=${{ env.OUTPUT }}
+          make deploy OUTPUT=buhms-website
