@@ -436,7 +436,13 @@ class RoomSearchPageState extends ConsumerState<RoomAllocationView> {
               ),
               padding: const EdgeInsets.symmetric(vertical: 12),
             ),
-            onPressed: () {},
+            onPressed: () {
+               ref
+                                      .read(
+                                        bookHostelNotifierProvider.notifier,
+                                      )
+                                      .bookRoom(room.roomId);
+            },
             child: const Text(
               'Choose Room',
               style: TextStyle(

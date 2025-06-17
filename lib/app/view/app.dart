@@ -1,4 +1,5 @@
 import 'package:buhms/app/constants/string_constants.dart';
+import 'package:buhms/app/l10n/arb/app_localizations.dart';
 import 'package:buhms/app/l10n/l10n.dart';
 import 'package:buhms/app/router/app_router.dart';
 import 'package:buhms/app/router/auth_listenable.dart';

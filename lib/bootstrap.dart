@@ -21,9 +21,9 @@ Future<void> bootstrap({
       WidgetsFlutterBinding.ensureInitialized();
       // Initialize Locator and Utils
       await Supabase.initialize(
-        url: 'https://wjoetioiltmhdblvchgz.supabase.co',
+        url: 'https://btqryrtjbxcvqhourtty.supabase.co',
         anonKey:
-            'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indqb2V0aW9pbHRtaGRibHZjaGd6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mjg4NTg1NTcsImV4cCI6MjA0NDQzNDU1N30.9ZHWI5xEalbkYfm0OhOrUmNhG-R_5nvKkFHoDI6tL5I',
+            'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ0cXJ5cnRqYnhjdnFob3VydHR5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAxODY0NzYsImV4cCI6MjA2NTc2MjQ3Nn0.V3kx4a-zrm_ffVHY68AoIo_65NGbRXqmvb3PK6M2i0I',
       );
       await Future.wait([
         locator.Locator.locateServices(),

@@ -28,7 +28,7 @@ dependencies:
   uuid: ^4.5.1
   fzregex:
   equatable:
-  intl: ^0.19.0
+  intl: ^0.20.2
   dartz:
   freezed_annotation:
   riverpod_annotation:
